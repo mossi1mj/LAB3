@@ -31,25 +31,11 @@ namespace LAB3
                 }
                 else if (number >= 26 && number <= 59)
                 {
-                    if (number % 2 == 0)
-                    {
-                        Console.WriteLine($"{name}, {number} is even.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{name}, {number} is odd.");
-                    }
+                    Second(name, number);
                 }
                 else if (number >= 60 && number <= 100)
                 {
-                    if (number % 2 == 0)
-                    {
-                        Console.WriteLine($"{name}, {number} is even.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{name}, {number} is odd.");
-                    }
+                    Second(name,number);
                 }
                 else
                 {
@@ -70,6 +56,17 @@ namespace LAB3
                 }
             }
             while (continueApp);
+        }
+        static void Second(string name, double number)
+        {
+            if (number % 2 == 0)
+            {
+                Console.WriteLine($"{name}, {number} is even.");
+            }
+            else
+            {
+                Console.WriteLine($"{name}, {number} is odd.");
+            }
         }
     }
 }
